@@ -6,7 +6,7 @@ from langchain.retrievers.document_compressors import FlashrankRerank, DocumentC
 import pickle
 
 
-def ensemble_retriever(collection_name: str) -> EnsembleRetriever:
+def ensemble_retriever(collection_name: str) -> ContextualCompressionRetriever:
     
     """
     Recuperación desde ChromaDB y BM25.

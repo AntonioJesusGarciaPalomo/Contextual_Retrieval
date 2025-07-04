@@ -1,4 +1,4 @@
-# Webinar CRAG
+# Contextual Retrieval
 
 Este proyecto consiste en la creación de un Contextual RAG:
 1. Creación del contexto de cada chunk del PDF.
@@ -10,16 +10,16 @@ Este proyecto consiste en la creación de un Contextual RAG:
 ## Estructura de carpetas
 
 ```plaintext
-📦 webinar_crag
+📦 Contextual_Retrieval
 ├── 📁 app                         # Código de la aplicacion
 │   ├── 📁 chatbot    
-│   │   ├── 📄 __init__.py         # Convierte un directorio en un paquete
+│   │   ├── 📄 __init__.py         
 │   │   ├── 📄 chatbot.py          # Clase del agente RAG 
 │   │   └── 📄 prompt.py           # Prompts del sistema
 │   └── 📁 tools                   # Herramientas 
-│       ├── 📄 __init__.py         # Convierte un directorio en un paquete
+│       ├── 📄 __init__.py         
 │       ├── 📄 retrieve.py         # Codigo para recuperacion desde Chroma
-│       └── 📄 tools.py            # Herramientas (logger)
+│       └── 📄 tools.py            # Herramientas
 │
 ├── 📁 data                        # Carpeta con los pdfs, se guarda aqui chroma y BM25
 │
@@ -78,4 +78,3 @@ Este proyecto necesita obtener una API KEY de OpenAI [aqui](https://platform.ope
     ```bash
     chainlit run front.py -w --port 8001
     ```
-

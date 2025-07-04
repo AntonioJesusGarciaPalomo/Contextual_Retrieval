@@ -9,6 +9,5 @@ langchain-community==0.3.2;
 langgraph==0.2.62;
 typing_extensions==4.12.2;
 tqdm==4.66.4;
+pypdf==5.7.0;
 chainlit==2.5.5;
-
-
